@@ -1,0 +1,99 @@
+body {
+    height: 100%;
+    background-color: rgb(34, 40, 49);
+    
+    
+}
+
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 60px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+   padding-bottom: 20px;
+    background-color: #ffffff;
+    padding-left: 30px;
+}
+
+input {
+    color: #ffffff;
+    background-color: #ffffff ;
+    width: 400px;
+    height: 70px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #090709;
+    margin-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #000;
+}
+
+
+label {
+    display: block;
+    float: center;
+    font-size: 19px;
+
+}
+
+
+span {
+    color: #968383;
+}
+
+
+.aviso {
+    font-size: 15px;
+    color: #0e0e0e;
+}
+
+
+h1 {
+    color: #fff;
+    font-size: 32px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+::-webkit-input-placeholder {
+    color: #777;
+}
+
+
+/*Boton anadir*/
+
+.pulse-effect {
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 2px 16px;
+    background-color: rgb(240, 130, 0);
+    transition: transform 0.3s ease-in-out;/* Transición suave del efecto de pulsación */
+     min-width: 170px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pulse-effect:hover {
+    background-color: #D35400 ;
+    
+    /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.pulse-effect:active {
+    transform: scale(0.9);
+    /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+}
+
+.form {
+display: flex;
+
+}
