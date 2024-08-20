@@ -44,12 +44,10 @@ include "db_conn.php";
   <div class="container">
     <h1>Subcategorías de objeto de aprendizaje</h1>
     <a href="anadirsubcategoria.php" class="btn pulse-effect">Añadir subcategoría</a>
-
-
     <div class="box-container">
       <?php
-      $categoryID = $_GET['variable'];
-      $sql = "SELECT * FROM `subcategorias` WHERE category_id = $categoryID";
+      $categoryId = $_GET['variable'];
+      $sql = "SELECT * FROM `subcategorias` WHERE category_id = $categoryId";
       $result = mysqli_query($conn, $sql);
       while ($row = mysqli_fetch_assoc($result)) {
       ?>

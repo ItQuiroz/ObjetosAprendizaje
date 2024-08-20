@@ -36,16 +36,17 @@ if (isset($_POST["submit"])) {
 </head>
 
 <body>
-   <nav>
-      <ul class="menu">
-         <li><a href="./index.html">Inicio</a></li>
-         <li><a href="./acerca/acerca.html">Acerca1</a></li>
-         <li><a href="">Servicios</a></li>
-      </ul>
-      <div class="search">
+<div class="container py-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Categorías</a></li>
+        <li class="breadcrumb-item"><a href="subcategorias.php">Subcategorías</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Añadir una subcategoria</li>
+      </ol>
+    </nav>
+  </div>
 
-      </div>
-   </nav>
+
 
    <h1>Añadir una subcategoria de un objeto de aprendizaje</h1>
    <div class="contact_form">

@@ -39,17 +39,14 @@ if (isset($_POST["submit"])) {
 </head>
 
 <body>
-  <nav>
-    <ul class="menu">
-      <li><a href="./index.html">Inicio</a></li>
-      <li><a href="./acerca/acerca.html">Acerca1</a></li>
-      <li><a href="">Servicios</a></li>
-    </ul>
-    <div class="search">
-
-    </div>
-  </nav>
-
+<div class="container py-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Categorías</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Editar una categoria</li>
+      </ol>
+    </nav>
+  </div>
 
   <h1>Editar una categoria de un objeto de aprendizaje</h1>
 
@@ -66,33 +63,39 @@ if (isset($_POST["submit"])) {
       <form action="" method="post" style="width:10vw; min-width:100px;">
 
 
-              <div>
-                <label class=" ">Titulo
-                  <span class="obligatorio">*</span>
-                </label>
-                <input type="text" name="titulo" id="" required="obligatorio" placeholder="Ejemplo: Inteligencia Artificial">
-              </div>
-
-              <div>
-                <label class="">Descripción
-                  <span class="obligatorio">*</span>
-                </label>
-                <input type="text" name="subtitulo" required="obligatorio" placeholder="Ejemplo: Objeto de Aprendizaje">
-              </div>
-
-              <div class="form">
-                <button type="submit" class="btn pulse-effect" name="submit">Guardar</button>
-                <a href="index.php" class="btn pulse-effect">Cancelar</a>
-              </div><br>
-
-
-              <div class="aviso">
-                <span class="obligatorio"> * </span>Los campos son obligatorios.
-              </div>
-
-            </form>
-          </div>
+        <div>
+          <label class=" ">Titulo
+            <span class="obligatorio">*</span>
+          </label>
+          <input type="text" name="titulo" id="" required="obligatorio" placeholder="Ejemplo: Inteligencia Artificial">
         </div>
+
+        <div>
+          <label class="">Descripción
+            <span class="obligatorio">*</span>
+          </label>
+          <input type="text" name="descripcion" required="obligatorio" placeholder="Ejemplo: Objeto de Aprendizaje">
+        </div>
+
+        <div class="form">
+          <button type="submit" class="btn pulse-effect" name="submit">Guardar</button>
+          <a href="index.php" class="btn pulse-effect">Cancelar</a>
+        </div><br>
+
+
+        <div class="aviso">
+          <span class="obligatorio"> * </span>Los campos son obligatorios.
+        </div>
+
+      </form>
+    </div>
+
+
+  </div>
+
+
+
+
 </body>
 
 </html>

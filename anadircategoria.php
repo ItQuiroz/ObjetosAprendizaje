@@ -36,16 +36,14 @@ if (isset($_POST["submit"])) {
 </head>
 
 <body>
-   <nav>
-      <ul class="menu">
-         <li><a href="./index.html">Inicio</a></li>
-         <li><a href="./acerca/acerca.html">Acerca1</a></li>
-         <li><a href="">Servicios</a></li>
-      </ul>
-      <div class="search">
-
-      </div>
-   </nav>
+<div class="container py-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Categorías</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Añadir una categoria</li>
+      </ol>
+    </nav>
+  </div>
 
    <h1>Añadir una categoria de un objeto de aprendizaje</h1>
    <div class="contact_form">
@@ -79,5 +77,4 @@ if (isset($_POST["submit"])) {
       </div>
    </div>
 </body>
-
 </html>
