@@ -46,7 +46,7 @@ include "db_conn.php";
     <a href="anadirsubcategoria.php" class="btn pulse-effect">Añadir subcategoría</a>
     <div class="box-container">
       <?php
-      $categoryId = $_GET['variable'];
+      $categoryId = $_GET['category_id'];
       $sql = "SELECT * FROM `subcategorias` WHERE category_id = $categoryId";
       $result = mysqli_query($conn, $sql);
       while ($row = mysqli_fetch_assoc($result)) {
