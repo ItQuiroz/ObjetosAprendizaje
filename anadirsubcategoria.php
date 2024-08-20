@@ -1,16 +1,16 @@
 <?php
 include "db_conn.php";
-
+$category_id = $_GET['category_id'];
 if (isset($_POST["submit"])) {
    $titulo = $_POST['titulo'];
    $descripcion = $_POST['descripcion'];
 
-   $sql = "INSERT INTO `subcategorias`(`id`, `titulo`, `descripcion`) VALUES (NULL,'$titulo','$descripcion')";
+   $sql = "INSERT INTO `subcategorias` ( `titulo`, `descripcion`,`category_id`) VALUES ('$titulo','$descripcion', $category_id)";
 
    $result = mysqli_query($conn, $sql);
 
    if ($result) {
-      header("Location: subcategorias.php?msg=New record created successfully");
+      header("Location: subcategorias.php?msg=New record created successfully&category_id=" . $category_id);
    } else {
       echo "Failed: " . mysqli_error($conn);
    }

@@ -43,7 +43,7 @@ include "db_conn.php";
 
   <div class="container">
     <h1>Subcategorías de objeto de aprendizaje</h1>
-    <a href="anadirsubcategoria.php" class="btn pulse-effect">Añadir subcategoría</a>
+    <a href="anadirsubcategoria.php?category_id=<?php echo $_GET['category_id'] ?>" class="btn pulse-effect">Añadir subcategoría</a>
     <div class="box-container">
       <?php
       $categoryId = $_GET['category_id'];
