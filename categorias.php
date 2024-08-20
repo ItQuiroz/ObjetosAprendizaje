@@ -47,7 +47,7 @@ include "db_conn.php";
           <p><?php echo $row["descripcion"] ?></p>
           <a href="editarcategoria.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
           <a href="eliminarcategoria.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
-          <div><a href="./subcategorias.php?category_id<?php echo $row["id"] ?>" class="btn">Ver subcategorías</a></div>
+          <div><a href="./subcategorias.php?category_id=<?php echo $row["id"] ?>" class="btn">Ver subcategorías</a></div>
         </div>
       <?php
       }
